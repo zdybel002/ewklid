@@ -1,0 +1,804 @@
+* {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+  /* добавим плавность переходов для всех элементов страницы*/
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов
+ header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+ } */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+image {
+  width: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  margin: 0;
+}
+h1,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding: 0 75px;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+.sectionHeading {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #333333;
+}
+.btm {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0em;
+  text-align: center;
+
+  padding: 24px 36px;
+  background-color: #ff9900;
+  color: white;
+}
+
+/* header */
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 75px;
+}
+.headerLogo {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+}
+.header-list-item:not(:last-child) {
+  margin-right: 85px;
+}
+.headerImg {
+  margin-left: 85px;
+}
+
+/* section hero */
+
+.containerHero {
+  padding: 100px 80px;
+  background-image: url(img/low-angle-photo-of-balconies-2462015\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.sectionHeroHeading {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-bottom: 24px;
+}
+.sectionHeroDescription {
+  max-width: 790px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-bottom: 90px;
+}
+
+/* 
+ section About us */
+.containerAboutUs .sectionHeading {
+  margin-bottom: 20px;
+}
+.sectionAboutUsDescription {
+  display: inline-block;
+  max-width: 1235px;
+  justify-content: start;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  margin-bottom: 50px;
+}
+
+.sectionContant {
+  margin-right: 32px;
+  width: 868px;
+  border-image: url(img/Rectangle\ 2.png);
+}
+.sectionAboutusContant {
+  display: flex;
+}
+.sectionContantImg {
+  display: flex;
+  align-items: end;
+  width: 868px;
+  height: 622px;
+  background-image: url(img/Rectangle\ 2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  margin-right: 32px;
+}
+.sectionAboutIkon1 {
+  max-width: 190px;
+  margin-right: 50px;
+}
+.sectionAboutIkon2 {
+  margin-right: 50px;
+}
+.sectionContantGroup {
+  max-width: 50%;
+}
+.sectionAboutusItem {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 65px 60px;
+  border: 1px solid #cacaca;
+}
+.sectionAboutusItem:not(:last-child) {
+  margin-bottom: 27px;
+}
+.sectionAboutusItemImg {
+  height: 165px;
+  max-width: 210px;
+  margin-right: 50px;
+}
+.sectionAboutusHeading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-bottom: 8px;
+}
+.sectionAboutusDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #333333;
+}
+.sectionAboutusBackgroud {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.sectionAboutBackgroundDesription {
+  max-width: 454px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: white;
+}
+.sectionAboutBackroundBtm {
+  display: flex;
+  align-items: center;
+  padding: 20px 38px;
+  border: 1px solid #ffffff;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  max-height: 50px;
+}
+
+/* section work */
+.sectionWork {
+  margin-bottom: 100px;
+}
+.sectionWorkContentRight {
+  margin-right: 32px;
+}
+.sectionWorkDescription {
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.sectionWorkLinks {
+  display: flex;
+}
+.sectionWorkHeading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.sectionWorkList {
+  display: flex;
+}
+.sectionWorkListItem {
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+.sectionWorkListItem:not(:last-child) {
+  margin-right: 85px;
+}
+
+.sectionWorkContent {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionWorkImg {
+  max-width: 48%;
+  background-size: contain;
+}
+.sectionWorkBtm {
+  color: white;
+  background-color: #ff9900;
+  border: 1px solid #ff9900;
+}
+.btm:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* question section */
+.sectionQuestion {
+  padding-bottom: 100px;
+}
+.sectionQuestionHeading {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.sectionQuestionList {
+  padding: 0;
+}
+.sectionQuestionListItem {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #333333;
+  border-top: 1px solid #cacaca;
+}
+.sectionQuestionListItem:not(:last-child) {
+  padding: 39px 0;
+}
+
+.sectionQestionItemDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionQestionHeading {
+  margin-bottom: 30px;
+}
+.sectionQustionHidePagraf {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.classOn {
+  display: block;
+}
+/* footer */
+
+.footer {
+  margin: 0 auto;
+  max-width: 1920px;
+  background-color: #222222;
+  padding: 50px 75px;
+}
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerRight {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerList {
+  margin-bottom: 90px;
+}
+.footerListItem {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: white;
+}
+.footerListSocial {
+  display: flex;
+}
+.footerListSocialItem:not(:last-child) {
+  margin-right: 25px;
+}
+.footerMidlle {
+  margin-right: 236px;
+}
+.footerMiddleHeading {
+  margin-bottom: 39px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0em;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #cacaca;
+}
+
+.input {
+  max-width: 570px;
+  min-height: 60px;
+  background-color: #414141;
+}
+::placeholder {
+  color: #cacaca;
+}
+.input3 {
+  height: 150px;
+}
+.input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/* footer left */
+.footerLeft {
+  margin: auto 0;
+  color: #cacaca;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.footerLeftDescription {
+  width: 363px;
+}
+
+.nav-toggle {
+  display: none;
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: #8f8585;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .headerLogo {
+    margin-right: 0;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .header-list {
+    display: none;
+  }
+  .headerImg {
+    margin-left: 0;
+  }
+  .containerHero {
+    padding: 160px 77px;
+    background-image: url(img/low-angle-photo-of-balconies-2462015\1\\(1\).jpg);
+    background-size: contain;
+  }
+  .sectionHeroHeading {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .sectionHeroDescription {
+    max-width: 660px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-bottom: 60px;
+  }
+
+  /* section about us  */
+
+  .sectionContantGroup {
+    max-width: 924px;
+  }
+  .sectionContantImg {
+    margin-right: 0;
+  }
+  .sectionAboutusBackgroud {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sectionAboutusContant {
+    display: block;
+  }
+  .sectionContantImg {
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  /* footer>>>> */
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 40px;
+  }
+  .containerHero {
+    padding: 160px 40px;
+    background-image: url(img/low-angle-photo-of-balconies-2462015\1\\(1\).jpg);
+    background-size: cover;
+  }
+  .sectionHeroHeading {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 31px;
+    letter-spacing: 0em;
+    margin-bottom: 16px;
+  }
+  .sectionHeroDescription {
+    max-width: 588px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .sectionAboutusBackgroud {
+    display: block;
+  }
+  .sectionAboutBackgroundDesription {
+    margin-bottom: 15px;
+  }
+  .sectionContantImg {
+    margin-bottom: 32px;
+  }
+  .sectionAboutusItem {
+    display: block;
+  }
+
+  /* footer>>>>> */
+  .containerFooter {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .footerMidlle {
+    margin-bottom: 32px;
+  }
+  .footerList {
+    display: none;
+  }
+  .footerLogo {
+    margin-bottom: 16px;
+  }
+  /* .footerRight{
+        display: none;
+    } */
+  .btm-footer {
+    max-width: 570px;
+  }
+  .sectionWorkContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sectionWorkImg {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .sectionAboutusBackgroud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionAboutBackgroundDesription {
+    text-align: center;
+  }
+  .sectionAboutBackroundBtm {
+    display: inline-block;
+  }
+  .sectionWorkList {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sectionWorkListItem {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .sectionWorkListItem:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 0 15px;
+  }
+  .sectionHero {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .headerContainer {
+    padding: 23px 0;
+  }
+  .headerLogoImg {
+    max-width: 110px;
+    max-height: 35px;
+  }
+  .nav-toggle {
+    margin-left: 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .containerHero {
+    background-image: url(img/low-angle-photo-of-balconies-2462015\1\\(2\).jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 22px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+  .sectionHeroHeading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-bottom: 6px;
+  }
+  .sectionHeroDescription {
+    text-align: center;
+    max-width: 247px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    margin-bottom: 32px;
+  }
+  .btm {
+    width: 162px;
+    font-size: 12px;
+    line-height: 14.63px;
+    padding: 15px 15px;
+  }
+
+  /* section About us>>>>>     */
+  .aboutImgDescriptionMedia {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .sectionContantImg {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .sectionAboutUs {
+    padding: 0 15px;
+  }
+  .containerAboutUs {
+    padding: 0;
+  }
+  .sectionHeading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  .sectionContant {
+    margin-bottom: 30px;
+  }
+
+  .sectionAboutUsDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+  .contantImg {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  .sectionAboutusBackgroud {
+    display: none;
+  }
+  .sectionAboutBackgroundDesription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  .sectionAboutBackroundBtm {
+    display: inline-block;
+    padding: 11px 14px;
+    background-color: white;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+  }
+  .sectionAboutusItem {
+    padding: 0;
+    border: none;
+  }
+  .sectionAboutusItemContent {
+    margin-bottom: 60px;
+  }
+  .sectionAboutIkon1 {
+    max-width: 64px;
+    margin-bottom: 12px;
+  }
+  .sectionAboutusHeading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  .sectionAboutusDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  /* section work>>>>>> */
+  /* .container{
+        padding: 60px 22px;
+    } */
+  .sectionWork {
+    padding: 0 15px;
+  }
+  .sectionHeading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .sectionWorkHeading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  .sectionWorkDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .sectionWork {
+    margin-bottom: 60px;
+  }
+
+  /* sectionQuestion?????? */
+  .sectionQuestion {
+    padding: 0 15px;
+  }
+
+  /* footer>>>>> */
+  .footer {
+    padding: 32px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* rigrh>>>>>> */
+
+  /* midlle>>>>>>> */
+  .footerMiddleHeading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1500px) {
+  .footerLeft {
+    display: none;
+  }
+  .footerMidlle {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 260px) {
+  .sectionWorkLinks {
+    display: block;
+  }
+  .sectionWorkBtm {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1830px) {
+  .sectionAboutusItem2 {
+    display: none;
+  }
+  .sectionAboutusItem1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 622px;
+  }
+  /* .sectionAboutIkon1{
+        display: none;
+    } */
+  .sectionAboutIkon1 {
+    margin-bottom: 50px;
+  }
+  .footerRight {
+    margin-right: 0;
+  }
+  .footerMidlle {
+    margin-right: 0;
+  }
+}
+
+.try {
+  width: 500px;
+  height: 500px;
+}
+.aboutImgDescriptionMedia {
+  display: none;
+}
