@@ -89,7 +89,7 @@ section {
 /* section hero */
 
 .containerHero {
-  padding: 100px 80px;
+  /* padding: 100px 80px; */
   background-image: url(img/low-angle-photo-of-balconies-2462015\ 1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -141,11 +141,11 @@ section {
 .sectionContantImg {
   display: flex;
   align-items: end;
-  width: 868px;
-  height: 622px;
+  max-width: 868px;
   background-image: url(img/Rectangle\ 2.png);
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
   background-repeat: no-repeat;
+  /* background-size: contain; */
 
   margin-right: 32px;
 }
@@ -413,6 +413,38 @@ section {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) and (max-width: 1830px) {
+  .sectionAboutusItem2 {
+    display: none;
+  }
+  .sectionAboutusItem1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 622px; */
+  }
+  /* .sectionAboutIkon1{
+        display: none;
+    } */
+  .sectionAboutIkon1 {
+    margin-bottom: 50px;
+  }
+  .footerRight {
+    margin-right: 0;
+  }
+  .footerMidlle {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .footerLeft {
+    display: none;
+  }
+  .footerMidlle {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .headerLogo {
     margin-right: 0;
@@ -427,8 +459,8 @@ section {
     margin-left: 0;
   }
   .containerHero {
-    padding: 160px 77px;
-    background-image: url(img/low-angle-photo-of-balconies-2462015\1\\(1\).jpg);
+    /* padding: 160px 77px; */
+    background-image: url(img/low-angle-photo-of-balconies-2462015\ 1.jpg);
     background-size: contain;
   }
   .sectionHeroHeading {
@@ -471,13 +503,12 @@ section {
   /* footer>>>> */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   section {
     padding: 0 40px;
   }
   .containerHero {
-    padding: 160px 40px;
-    background-image: url(img/low-angle-photo-of-balconies-2462015\1\\(1\).jpg);
+    background-image: url(img/low-angle-photo-of-balconies-2462015\ 1.jpg);
     background-size: cover;
   }
   .sectionHeroHeading {
@@ -502,9 +533,7 @@ section {
   .sectionAboutBackgroundDesription {
     margin-bottom: 15px;
   }
-  .sectionContantImg {
-    margin-bottom: 32px;
-  }
+
   .sectionAboutusItem {
     display: block;
   }
@@ -538,6 +567,7 @@ section {
     margin-bottom: 16px;
   }
   .sectionAboutusBackgroud {
+    display: none !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -564,8 +594,32 @@ section {
   .sectionWorkListItem:not(:last-child) {
     margin-right: 0;
   }
+  .headerLogoImg {
+    max-width: 150px;
+    max-height: 55px;
+  }
+  .sectionWorkBtm {
+    padding: 12px 18px;
+  }
 }
-
+@media (max-width: 560px) {
+  .headerContainer {
+    padding: 5px 5px;
+  }
+  section {
+    padding: 0 5px;
+  }
+  .tabs_btn:not(:last-child) {
+    margin-right: 0;
+  }
+  .btm_intro {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  .sectionAboutUsDescription {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 320px) {
   .header {
     padding: 0 15px;
@@ -762,45 +816,12 @@ section {
   }
 }
 
-@media (max-width: 1500px) {
-  .footerLeft {
-    display: none;
-  }
-  .footerMidlle {
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 0) and (max-width: 260px) {
   .sectionWorkLinks {
     display: block;
   }
   .sectionWorkBtm {
     margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1830px) {
-  .sectionAboutusItem2 {
-    display: none;
-  }
-  .sectionAboutusItem1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 622px;
-  }
-  /* .sectionAboutIkon1{
-        display: none;
-    } */
-  .sectionAboutIkon1 {
-    margin-bottom: 50px;
-  }
-  .footerRight {
-    margin-right: 0;
-  }
-  .footerMidlle {
-    margin-right: 0;
   }
 }
 
