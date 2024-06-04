@@ -270,7 +270,7 @@ section {
   justify-content: space-between;
 }
 .sectionWorkImg {
-  width: 50%;
+  /* width: 50%; */
   background-size: contain;
 }
 .sectionWorkBtm {
@@ -403,13 +403,12 @@ section {
   width: 363px;
 }
 
-.nav-toggle {
+.nav_toggle {
   display: none;
   position: relative;
   float: right;
   width: 30px;
   height: 30px;
-  background: #8f8585;
   cursor: pointer;
 }
 
@@ -449,7 +448,7 @@ section {
   .headerLogo {
     margin-right: 0;
   }
-  .nav-toggle {
+  .nav_toggle {
     display: block;
   }
   .header-list {
@@ -503,6 +502,26 @@ section {
   /* footer>>>> */
 }
 
+@media (max-width: 768px) {
+  .sectionWorkContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sectionWorkImg {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .sectionQestionHeading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+  }
+  .sectionWorkList {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
   section {
     padding: 0 40px;
@@ -534,10 +553,6 @@ section {
     margin-bottom: 15px;
   }
 
-  .sectionAboutusItem {
-    display: block;
-  }
-
   /* footer>>>>> */
   .containerFooter {
     padding: 0;
@@ -552,20 +567,11 @@ section {
   .footerLogo {
     margin-bottom: 16px;
   }
-  /* .footerRight{
-        display: none;
-    } */
+
   .btm-footer {
     max-width: 570px;
   }
-  .sectionWorkContent {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .sectionWorkImg {
-    max-width: 100%;
-    margin-bottom: 16px;
-  }
+
   .sectionAboutusBackgroud {
     display: none !important;
     display: flex;
@@ -580,7 +586,6 @@ section {
   }
   .sectionWorkList {
     display: flex;
-    justify-content: space-between;
   }
   .sectionWorkListItem {
     margin: 0;
@@ -607,7 +612,7 @@ section {
     padding: 5px 5px;
   }
   section {
-    padding: 0 5px;
+    padding: 0px 0px;
   }
   .tabs_btn:not(:last-child) {
     margin-right: 0;
@@ -618,6 +623,18 @@ section {
   }
   .sectionAboutUsDescription {
     margin-bottom: 0;
+  }
+  .footer {
+    padding: 0px 0px;
+  }
+  .footerRight {
+    display: none;
+  }
+  .sectionAboutusItem {
+    display: block;
+  }
+  .input {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -635,7 +652,7 @@ section {
     max-width: 110px;
     max-height: 35px;
   }
-  .nav-toggle {
+  .nav_toggle {
     margin-left: 0;
   }
   .container {
@@ -813,6 +830,9 @@ section {
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+  }
+  .sectionQestionHeading {
+    font-size: 14px;
   }
 }
 
